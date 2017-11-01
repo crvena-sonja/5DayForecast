@@ -1,0 +1,18 @@
+.FullForecastContainer{
+    margin: auto;
+    margin-bottom: 75px;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+}
+
+.FullForecast{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:700px){
+    .FullForecast{
+        flex-direction: column;
+    }
+}

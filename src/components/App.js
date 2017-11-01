@@ -28,6 +28,10 @@ class App extends Component {
         <SearchForm />
         {errorMessage}
         {forecast}
+
+        <footer className="App-footer">
+          <p>Made with  <i className="fa fa-heart" aria-hidden="true"></i> by Sonja </p>
+        </footer>
       </div>
     );
   }

@@ -21,7 +21,7 @@ export class SearchForm extends Component{
                     City:
                     <input type="text" name="city" pattern='(^[\w\s]+,\s*\w{2}$)' placeholder="Arlington,VA" 
                         ref={city => this.city = city} required/>
-                    <button type="submit">Get weather!</button>
+                    <button type="submit">Search</button>
                 </form>
            </div>
         );

@@ -15,9 +15,9 @@ export const forecastReducer = (state=initialState, action) => {
     case actions.FETCH_FORECAST_REQUEST:
       return Object.assign({}, state, {loading: true, city: action.city});
     case actions.FETCH_FORECAST_SUCCESS:
-      return Object.assign({}, state, {forecast: action.forecast, loading: false, showForecast: true});
+      return Object.assign({}, state, {forecast: action.forecast, loading: false, error:false, showForecast: true});
     case actions.FETCH_FORECAST_ERROR:
-      return Object.assign({}, state, {error: action.error, loading: false});
+      return Object.assign({}, state, {error: action.error, loading: false, showForecast: false});
     default:
       return state;
   }
