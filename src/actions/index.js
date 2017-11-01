@@ -24,8 +24,8 @@ export const fetchForecastError = (error) => ({
 export const FETCH_FORECAST = 'FETCH_FORECAST';
 export const fetchForecast = (city) => dispatch => {
     dispatch(fetchForecastRequest(city))
-    return fetch(`http://api.openweathermap.org/data/2.5/forecast/daily
-    ?appid=585e670f55ee9b114fa2f1f2731177d9&q=${city}&units=imperial&cnt=5`)
+    return fetch(`http://api.openweathermap.org/data/2.5/forecast/daily` + 
+    `?appid=585e670f55ee9b114fa2f1f2731177d9&q=${city.replace(/\s+/g, '')}&units=imperial&cnt=5`)
     .then(response => {
       if(!response.ok){
         Response.reject(response.statusText);
@@ -33,7 +33,7 @@ export const fetchForecast = (city) => dispatch => {
       return response.json();
     })
     .then(json => {
-      return dispatch(fetchForecastSuccess(json));
+      return dispatch(fetchForecastSuccess(json.list));
     })
     .catch(err => {
       console.log('there was an error: ' + err);

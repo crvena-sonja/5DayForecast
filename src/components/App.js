@@ -1,21 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {connect} from 'react-redux';
+
+import SearchForm from './SearchForm';
+import Forecast from './Forecast';
 import './App.css';
 
 class App extends Component {
   render() {
+
+    let forecast;
+    let errorMessage;
+
+    if(this.props.showForecast){
+      forecast = <Forecast />;
+    }
+
+    if(this.props.error){
+      errorMessage = <p>Unfortunately there was an issue. Please try your search again.</p>;
+    }
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <i className="fa fa-thermometer-half fa-5x" aria-hidden="true"></i>
+          <h1 className="App-title">5-day Forecast</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <SearchForm />
+        {errorMessage}
+        {forecast}
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  showForecast: state.showForecast,
+  error: state.error,
+  forecast: state.forecast,
+});
+
+export default connect(mapStateToProps)(App);
