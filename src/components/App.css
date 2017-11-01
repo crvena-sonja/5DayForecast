@@ -21,13 +21,13 @@
   font-size: large;
 }
 
-
 .App-footer {
   background-color: dodgerblue;
   height: 40px;
   padding: 10px;
   color: white;
   position: fixed;
+  text-align: center;
   left: 0;
   bottom: 0;
   width: 100%;

@@ -20,17 +20,17 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <i className="fa fa-thermometer-half fa-5x" aria-hidden="true"></i>
-          <h1 className="App-title">5-day Forecast</h1>
+      <div className='App'>
+        <header className='App-header'>
+          <i className='fa fa-thermometer-half fa-5x' aria-hidden='true'></i>
+          <h1 className='App-title'>5-day Forecast</h1>
         </header>
         <SearchForm />
         {errorMessage}
         {forecast}
 
-        <footer className="App-footer">
-          <p>Made with  <i className="fa fa-heart" aria-hidden="true"></i> by Sonja </p>
+        <footer className='App-footer'>
+          <p>Made with  <i className='fa fa-heart' aria-hidden='true'></i> by Sonja </p>
         </footer>
       </div>
     );

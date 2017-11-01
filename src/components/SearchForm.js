@@ -16,12 +16,12 @@ export class SearchForm extends Component{
 
     render(){
         return(
-            <div className="Form">
+            <div className='Form'>
                 <form onSubmit={e => this.onSubmit(e)}>
                     City:
-                    <input type="text" name="city" pattern='(^[\w\s]+,\s*\w{2}$)' placeholder="Arlington,VA" 
+                    <input type='text' name='city' pattern='(^[\w\s]+,\s*\w{2}$)' placeholder='Arlington,VA' 
                         ref={city => this.city = city} required/>
-                    <button type="submit">Search</button>
+                    <button type='submit'>Search</button>
                 </form>
            </div>
         );
