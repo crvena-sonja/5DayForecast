@@ -10,14 +10,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Launching the app
 
+Download the repository, run ```npm install```.
+
 ```
 npm start
 ```
-This will launch the app at (http://localhost:3000/).
+This will launch the app at http://localhost:3000/ 
 
 ## Built With
 
 * React
 * Redux
+
+## Author
+
+* **Sonja Duric**
 
 
