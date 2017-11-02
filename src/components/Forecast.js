@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-
 import SingleDayForecast from './SingleDayForecast';
 import './Forecast.css';
 

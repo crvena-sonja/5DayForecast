@@ -1,8 +1,3 @@
-export const NEW_FORECAST = 'NEW_FORECAST';
-export const newForecast = () => ({
-  type: NEW_FORECAST
-});
-
 export const FETCH_FORECAST_REQUEST = 'FETCH_FORECAST_REQUEST';
 export const fetchForecastRequest = (city) => ({
   type: FETCH_FORECAST_REQUEST,

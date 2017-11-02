@@ -1,11 +1,9 @@
 import React from 'react';
-
 import './SingleDayForecast.css';
 
-export default function SingleDayForecast(props){
+export const SingleDayForecast = (props) => {
     const daysOfWeek = {'0':'Sunday', '1':'Monday', '2':'Tuesday', 
                         '3':'Wednesday', '4':'Thursday', '5':'Friday', '6':'Saturday'};
-
 
     return(
         <div id={props.index} className='SingleDayForecast'>
@@ -19,3 +17,5 @@ export default function SingleDayForecast(props){
         </div>
     );
 }
+
+export default SingleDayForecast;
