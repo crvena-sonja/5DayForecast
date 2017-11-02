@@ -22,7 +22,7 @@ class App extends Component {
       <div className='App'>
         <header className='App-header'>
           <i className='fa fa-thermometer-half fa-5x' aria-hidden='true'></i>
-          <h1 className='App-title'>5-day Forecast</h1>
+          <h1 className='App-title'>5-Day Forecast</h1>
         </header>
         <SearchForm />
         {errorMessage}
