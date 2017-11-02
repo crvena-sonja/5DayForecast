@@ -1,9 +1,5 @@
 .SingleDayForecast{
     flex: 1;
+    border-top: 1px solid dodgerblue;
 }
 
-@media (max-width:700px){
-    .SingleDayForecast{
-        border-top: 1px solid dodgerblue;
-    }
-}

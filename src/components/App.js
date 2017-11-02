@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     if(this.props.error){
-      errorMessage = <p>Unfortunately there was an issue. Please try your search again.</p>;
+      errorMessage = <p>Unfortunately, there was an issue. Please try a different city.</p>;
     }
 
     return (
@@ -40,7 +40,6 @@ class App extends Component {
 const mapStateToProps = state => ({
   showForecast: state.showForecast,
   error: state.error,
-  forecast: state.forecast,
 });
 
 export default connect(mapStateToProps)(App);

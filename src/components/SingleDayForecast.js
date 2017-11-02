@@ -14,8 +14,8 @@ export default function SingleDayForecast(props){
             <img src={`http://openweathermap.org/img/w/${props.weather.weather[0].icon}.png`} 
                 alt={props.weather.weather[0].description} />
             <p>Humidity: {props.weather.humidity}%</p>
-            <p>Hi: {Math.round(props.weather.temp.max)} F</p>
-            <p>Lo: {Math.round(props.weather.temp.min)} F</p>
+            <p>Hi: {Math.round(props.weather.temp.max)}&deg;F</p>
+            <p>Lo: {Math.round(props.weather.temp.min)}&deg;F</p>
         </div>
     );
 }
