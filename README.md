@@ -1,36 +1,23 @@
-#5-Day Forecast
+# 5-Day Forecast
 
 This is a one-page, responsive application to get the forecast for the next five days in a city by searching. This application expects to receive the search terms as {city name},{2 character state code} for any city in the US. The weather data is ingested from the OpenWeatherMap API. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Screenshot
 
+![full view](screenshots/desktop-view.png)
 
-## Table of Contents
+## Launching the app
 
+```
+npm start
+```
+This will launch the app at (http://localhost:3000/).
 
-- [Available Scripts](#available-scripts)
-  - [npm start](#npm-start)
-  - [npm test](#npm-test)
-  - [npm run build](#npm-run-build)
-  - [npm run eject](#npm-run-eject)
+## Built With
 
+* React
+* Redux
 
-
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
 
